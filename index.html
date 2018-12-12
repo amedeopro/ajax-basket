@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basket</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+      <div class="navbar">
+        <img src="img/nba-logo.png" alt="">
+      </div>
+
+      <div class="container-data">
+        <div class="data-left" id="idCodGiocatori">
+
+        </div>
+        <div class="data-right" id="stat-giocatore">
+
+        </div>
+      </div>
+
+
+
+
+    <script id="codici-giocatori" type="text/x-handlebars-template">
+      <div class="entry">
+        <p class="codice-giocatore-singolo">{{codGiocatore}}</p>
+      </div>
+    </script>
+
+    <script id="statistiche-giocatori" type="text/x-handlebars-template">
+      <div class="statistiche">
+        <ul>
+          <li>Codice Giocatore: {{ codGioc }}</li>
+          <li>Punti Fatti: {{ pntFatt }}</li>
+          <li>rimbalzi: {{ rimb }}</li>
+          <li>Falli: {{ falli }}</li>
+          <li>Punti da 2: {{ pntdue }}</li>
+          <li>Punti da tre: {{ pnttre }}</li>
+        </ul>
+      </div>
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
